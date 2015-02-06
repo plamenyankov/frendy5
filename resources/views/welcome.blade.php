@@ -38,7 +38,7 @@
 	</head>
 	<body>
 		<div class="container">
-            <a class="button" href="#">click me</a>
+
 			<div class="content">
 				<div class="title">Laravel 5</div>
 				<div class="quote">{{ Inspiring::quote() }}</div>
