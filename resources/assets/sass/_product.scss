@@ -1,0 +1,25 @@
+.main-product-img{
+width: rem-calc(300);
+}
+.product-imgs {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0px;
+  li a img{
+  width: rem-calc(74);
+  }
+li{
+  display: inline-block;
+  margin: 0px 3px 3px;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+}
+.bg-white{
+  background: #ffffff;
+}
+.quantityClass{
+width: 40px !important;
+text-align: right;
+}

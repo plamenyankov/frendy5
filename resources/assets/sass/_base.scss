@@ -1,0 +1,33 @@
+.mt-20{
+  margin-top: 20px;
+}
+.bg{
+  background: url('/img/congruent_pentagon.png');
+}
+.section.bg{
+  margin: 0px;
+}
+.social-icons{
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 5px;
+  text-shadow: none;
+}
+.social{
+  &:hover{
+    i{
+    color: #fff;
+  }}
+}
+.social-icons-login,.social-icons-facebook{
+  @extend .social-icons;
+  color: #007095;
+}
+.social-icons-reg{
+  @extend .social-icons;
+  color: #368a55;
+}
+.social-icons-google{
+  @extend .social-icons;
+  color: #cf2a0e;
+}
