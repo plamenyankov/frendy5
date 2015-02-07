@@ -2,7 +2,8 @@
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-
+use App\Events\UserHasRegistered;
+use App\Handlers\Events\SendRegistrationConfirmation;
 class EventServiceProvider extends ServiceProvider {
 
 	/**
@@ -14,8 +15,10 @@ class EventServiceProvider extends ServiceProvider {
 		'event.name' => [
 			'EventListener',
 		],
-	];
-
+        UserHasRegistered::class=>[
+            SendRegistrationConfirmation::class,
+        ],
+    ];
 	/**
 	 * Register any other events for your application.
 	 *
