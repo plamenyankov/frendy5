@@ -22,7 +22,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-Route::group(['namespace'=>'Admin','middleware' => 'auth'],function(){
+//,'middleware' => 'admin'
+Route::group(['namespace'=>'Admin'],function(){
     Route::controllers([
         'admin' => 'AdminController'
     ]);

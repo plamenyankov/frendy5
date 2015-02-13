@@ -43,11 +43,9 @@ class SendRegistrationConfirmation{
         {
             $message->to($event->email, $event->name)->subject('Welcome!');
         });
-//        $redis = \LaravelRedis::connection();
-//        $redis->publish('users.registered',$event);
+
         $redis = \Illuminate\Support\Facades\Redis::connection();
-//         $redis->lpush('users',json_encode([$event->email,$event->name]));
-        $redis->publish('users.registered',json_encode([$event->email,$event->name]));
+        $redis->publish('users.registered',json_encode([$event->id,$event->email,$event->name]));
     }
 
 }

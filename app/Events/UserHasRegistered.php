@@ -16,17 +16,22 @@ class UserHasRegistered extends Event {
      * @var
      */
     public $email;
+    /**
+     * @var
+     */
+    public  $id;
 
     /**
 	 * Create a new event instance.
 	 *
 	 * @return void
 	 */
-	public function __construct($name,$email)
+	public function __construct($id,$name,$email)
 	{
 
         $this->name = $name;
         $this->email = $email;
+        $this->id = $id;
     }
 
 }

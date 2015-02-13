@@ -33,12 +33,9 @@ class UserRegistrationCommandHandler extends DbUserRepository implements Registr
 	 */
 	public function handle(UserRegistrationCommand $command)
 	{
-
-        $this->auth->login(
-            $this->create(
-            ['name'=>$command->name,'email'=>$command->email,'password'=>$command->password]
-        ));
-        \Event::fire(new UserHasRegistered($command->name,$command->email));
+        $user = $this->create(['name'=>$command->name,'email'=>$command->email,'password'=>$command->password]);
+        $this->auth->login($user);
+        \Event::fire(new UserHasRegistered($user->id,$user->name,$user->email));
 	}
 
 

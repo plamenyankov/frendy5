@@ -1,7 +1,7 @@
 App = Ember.Application.create();
 
 App.Router.reopen({
-    rootURL: '/home'
+    rootURL: '/admin/users'
 });
 
 App.IndexRoute = Ember.Route.extend({

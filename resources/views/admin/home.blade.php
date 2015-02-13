@@ -7,6 +7,7 @@
     <title>Welcome to Smarter Admin</title>
     <link rel="stylesheet" href="/css/app.css" />
     <link href="/css/foundation-icons/foundation-icons.css" rel="stylesheet" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.3/socket.io.min.js"></script>
     <script src="/js/ember/libs/jquery-1.10.2.js"></script>
     <script src="/js/ember/libs/ember-template-compiler-1.10.0.js"></script>
     <script src="/js/ember/libs/ember-1.10.0.debug.js"></script>
@@ -17,6 +18,7 @@
     <link href="/css/flat-icon/flaticon.css" rel="stylesheet" />
     <link href="/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
     <link href="/css/todos.css" rel="stylesheet" />
+    @yield('scripts')
 </head>
 <body>
 <div class="row full-width wrapper">

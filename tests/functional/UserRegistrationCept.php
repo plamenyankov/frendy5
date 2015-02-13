@@ -14,3 +14,4 @@ $I->seeRecord('users',[
 ]);
 $I->assertTrue(\Auth::check());
 $I->seeCurrentUrlEquals('/home');
+

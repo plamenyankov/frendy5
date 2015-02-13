@@ -1,9 +1,7 @@
 @extends('app')
 
 @section('content')
-<script src="/js/ember/libs/jquery-1.10.2.js"></script>
-<script src="/js/ember/libs/ember-template-compiler-1.10.0.js"></script>
-<script src="/js/ember/libs/ember-1.10.0.debug.js"></script>
+
 
 <div class="container">
 	<div class="row">
