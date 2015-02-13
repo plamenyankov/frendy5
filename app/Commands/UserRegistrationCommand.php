@@ -2,7 +2,7 @@
 
 use App\Commands\Command;
 
-class UserRegistrationCommand extends Command {
+class UserRegistrationCommand extends Command{
 
     /**
      * @var

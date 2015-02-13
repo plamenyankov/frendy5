@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://frendy.app',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -184,7 +184,7 @@ return [
 		'Password'  => 'Illuminate\Support\Facades\Password',
 		'Queue'     => 'Illuminate\Support\Facades\Queue',
 		'Redirect'  => 'Illuminate\Support\Facades\Redirect',
-		'Redis'     => 'Illuminate\Support\Facades\Redis',
+        'Redis'     => 'Illuminate\Support\Facades\Redis',
 		'Request'   => 'Illuminate\Support\Facades\Request',
 		'Response'  => 'Illuminate\Support\Facades\Response',
 		'Route'     => 'Illuminate\Support\Facades\Route',
@@ -196,6 +196,7 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Socialite' => 'Laravel\Socialite\Facades\Socialite',
         'HTML'      => 'Illuminate\Html\HtmlServiceProvider',
+
 	],
 
 ];

@@ -1,0 +1,8 @@
+User:
+ name: $string
+ email: $string@example.com
+ password: $string
+ remember_token: $string
+ created_at: $date
+ updated_at: $date
+

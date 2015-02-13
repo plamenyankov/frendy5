@@ -2,30 +2,27 @@
 
 use App\Commands\UserRegistrationCommand;
 use App\Events\UserHasRegistered;
+
+use App\Frendy\Repositories\Auth\RegistrationRepository;
+use App\Frendy\Repositories\DbUserRepository;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Contracts\Auth\Registrar;
-class UserRegistrationCommandHandler{
+class UserRegistrationCommandHandler extends DbUserRepository implements RegistrationRepository{
 
     /**
      * @var Guard
      */
     private $auth;
-    /**
-     * @var Registrar
-     */
-    private $registrar;
+
 
     /**
 	 * Create the command handler.
 	 *
 	 * @return void
 	 */
-	public function __construct(Guard $auth, Registrar $registrar)
+	public function __construct(Guard $auth)
 	{
-		//
         $this->auth = $auth;
-        $this->registrar = $registrar;
     }
 
 	/**
@@ -36,12 +33,13 @@ class UserRegistrationCommandHandler{
 	 */
 	public function handle(UserRegistrationCommand $command)
 	{
+
         $this->auth->login(
-            $this->registrar->create(
+            $this->create(
             ['name'=>$command->name,'email'=>$command->email,'password'=>$command->password]
         ));
-//        $command->release(300);
         \Event::fire(new UserHasRegistered($command->name,$command->email));
 	}
+
 
 }

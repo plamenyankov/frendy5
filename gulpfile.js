@@ -13,5 +13,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss')
-       .copy('bower_components/foundation/scss', 'resources/assets/sass');
+       .copy('bower_components/foundation/scss', 'resources/assets/sass')
+        .copy('bower_components/foundation/js/foundation.min.js','public/js/foundation.min.js')
+        .copy('bower_components/jquery/dist/jquery.min.js','public/js/jquery.min.js');
 });

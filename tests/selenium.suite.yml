@@ -1,0 +1,13 @@
+class_name: SeleniumGuyTester
+modules:
+   enabled: [AcceptanceHelper, PhpBrowser, Laravel5, WebDriver, Asserts, Db]
+   config:
+           PhpBrowser:
+               url: 'http://frendy.app'
+           WebDriver:
+                   url: 'http://frendy.app'
+                   browser: firefox
+                   window_size: 1024x768
+                   wait: 10
+                   capabilities:
+                       unexpectedAlertBehaviour: 'accept'

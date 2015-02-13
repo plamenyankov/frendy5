@@ -10,7 +10,9 @@ namespace App\Frendy\Auth;
 
 
 class AuthenticateUser {
-public function execute(){
-    return 'auth user';
-}
+
+    public function execute()
+    {
+        return 'auth user';
+    }
 } 

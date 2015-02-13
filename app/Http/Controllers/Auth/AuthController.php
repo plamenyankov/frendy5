@@ -38,6 +38,27 @@ class AuthController extends Controller {
 
 		$this->middleware('guest', ['except' => ['getLogout','getFacebook']]);
 	}
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Foundation\Http\FormRequest  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postRegister(Request $request)
+    {
+        $validator = $this->registrar->validator($request->all());
+
+        if ($validator->fails())
+        {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+         $this->dispatchFrom(UserRegistrationCommand::class,$request);
+
+        return redirect($this->redirectPath());
+    }
+
     public function getFacebook(AuthenticateUser $authenticateUser){
 
         return $authenticateUser->execute();

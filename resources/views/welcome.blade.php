@@ -2,7 +2,7 @@
 	<head>
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 		<link href='css/app.css' rel='stylesheet' type='text/css'>
-
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.3/socket.io.min.js"></script>
 		<style>
 			body {
 				margin: 0;
@@ -40,10 +40,23 @@
     <h1>     </h1>
 		<div class="container">
 
+                <input type="text" name="" id="m" value=""/>
+                <a href="#" id="btn">Submit</a>
+
 			<div class="content">
 				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="quote"><% Inspiring::quote() %></div>
 			</div>
 		</div>
+    <script>
+//        var socket = io('http://127.0.0.1:3000');
+//        $('#btn').on('click',function(e){
+//            e.preventDefault();
+//            console.log($('#m').val());
+//            socket.emit('message', $('#m').val());
+//            $('#m').val('');
+//        });
+    </script>
 	</body>
+
 </html>
