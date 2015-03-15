@@ -354,22 +354,22 @@ nav i{
 .size-48{
   font-size: rem-calc(48);
 }
-.basket-dropdown{
-  @extend .dropdown;
-  li{
-    width: 360px !important;
-    a{
-      display: inline-block !important;
-      width: 70%;
-      float: left;
-    }
-  }
+//.basket-dropdown{
+//  @extend .dropdown;
+//  li{
+//    width: 360px !important;
+//    a{
+//      display: inline-block !important;
+//      width: 70%;
+//      float: left;
+//    }
+//  }
 
-  button{
-    display: inline-block;
-    float: right;
-  }
-}
+//  button{
+//    display: inline-block;
+//    float: right;
+//  }
+//}
 .basket-clicked{
   color: #D84A21;
 }
@@ -397,8 +397,9 @@ nav i{
   margin-bottom: 10px;
 }
 .registration-form{
-  height: 200px;
-  display: none;
+  .button-nav{
+    @include button(rem-calc(2),#008CBA);
+  }
 }
 .nav-list{
   list-style-type: none;
@@ -407,4 +408,19 @@ nav i{
   @include button;
   background-color: #008CBA !important;
   color: #ffffff !important;
+}
+.slick-dots {
+  bottom: 45px;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+.dropdown li table a{
+  padding: 0px !important;
 }

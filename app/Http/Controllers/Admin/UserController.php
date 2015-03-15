@@ -16,14 +16,17 @@ class UserController extends Controller{
 
         $this->repository = $repository;
     }
+    public function index(){
+        return view('Admin.users');
 
+    }
 
     /**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function getIndex()
+	public function getUsers()
 	{
 		return $this->repository->getJSONUsers();
 	}

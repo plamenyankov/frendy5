@@ -1,0 +1,96 @@
+<form name="productForm" ng-submit="submit(productForm)" novalidate>
+    <fieldset>
+        <legend>New Product</legend>
+
+        <div class="row">
+            <div class="large-6 columns"
+                 ng-class="{'error' : productForm.brand.$invalid && productForm.brand.$dirty && productForm.brand.$focused}">
+                <label class="control-label">Brand
+                    <input type="text" placeholder="Brand" name="brand" ng-model="product.brand" ng-minlength="3"
+                           required cu-focus>
+                </label>
+                <small class="error"
+                       ng-show="productForm.brand.$invalid && productForm.brand.$dirty && productForm.brand.$focused">
+                    Brand name must be more than 3 characters
+                </small>
+            </div>
+            <div class="large-6 columns"
+                 ng-class="{'error' : productForm.model.$invalid && productForm.model.$dirty && productForm.model.$focused}">
+                <label class="control-label">Model</label>
+                <input type="text" placeholder="Model" name="model" ng-model="product.model" ng-minlength="3" required
+                       cu-focus>
+                <small class="error"
+                       ng-show="productForm.model.$invalid && productForm.model.$dirty && productForm.model.$focused">
+                    Model name must be more than 3 characters
+                </small>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-4 columns" ng-class="{'error' : productForm.cat.$invalid && productForm.cat.$touched}">
+                <label class="control-label">Category</label>
+                <select name="cat" ng-model="product.cat" required>
+                    <option value="">Choose Category</option>
+                    <option value="1">Husker</option>
+                    <option value="2">Starbuck</option>
+                    <option value="3">Hot Dog</option>
+                    <option value="4">Apollo</option>
+                </select>
+                <small class="error" ng-show="productForm.cat.$invalid && productForm.cat.$touched">You must choose
+                    category
+                </small>
+            </div>
+            <div class="large-4 columns"
+                 ng-class="{'error': productForm.qty.$invalid && productForm.qty.$touched && productForm.qty.$focused}">
+                <label class="control-label">Quantity</label>
+                <input type="number" placeholder="Quantity" name="qty" ng-model="product.qty" required cu-focus>
+                <small class="error"
+                       ng-show="productForm.qty.$invalid && productForm.qty.$touched && productForm.qty.$focused">You
+                    must put quantity
+                </small>
+            </div>
+            <div class="large-4 columns"
+                 ng-class="{'error': productForm.price.$invalid && productForm.price.$touched && productForm.price.$focused}">
+                <label class="control-label">Price</label>
+                <input type="number" placeholder="Price" name="price" ng-model="product.price" required cu-focus>
+                <small class="error"
+                       ng-show="productForm.price.$invalid && productForm.price.$touched && productForm.price.$focused">
+                    Price must be at least one digit
+                </small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <label>Description</label>
+                <textarea placeholder="Description" ng-model="product.descr"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="button small" ng-file-select ng-model="files">Upload image</div>
+                <table>
+                    <tr>
+
+                        <td ng-repeat="img in images" class="relative">
+                            <small ng-click="delete(img)" class="del-img">X</small>
+                            <img  src="{{img}}"  style="width: 200px;"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="large-6 columns">
+                <label>Availability</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Available</label>
+            </div>
+        </div>
+        <div class="row large-12 column">
+            <input type="submit" class="button tiny" ng-class="{'disabled':productForm.$invalid}" value="Submit"></div>
+    </fieldset>
+</form>
+
+
+
+

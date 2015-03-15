@@ -1,8 +1,6 @@
 <?php namespace App\Http\Controllers;
 
 
-use App\Events\UserHasRegistered;
-
 class WelcomeController extends Controller {
 
 	/*
@@ -34,7 +32,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{
 
-        return view('welcome');
+        return view('home.index',['products'=>[]]);
 	}
 
 }

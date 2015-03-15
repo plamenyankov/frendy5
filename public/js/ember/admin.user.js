@@ -19,7 +19,7 @@ App.AdminUser = Ember.Object.extend({})
 App.AdminUser.reopenClass({
     findAll: function(){
         users=[];
-        return $.getJSON('/user')
+        return $.getJSON('/admin/user')
             .then(function(data){
                 data.users.forEach(function(child){
                     console.log(child);

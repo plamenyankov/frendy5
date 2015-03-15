@@ -2,7 +2,6 @@
 
 use App\Commands\UserRegistrationCommand;
 use App\Events\UserHasRegistered;
-
 use App\Frendy\Repositories\Auth\RegistrationRepository;
 use App\Frendy\Repositories\DbUserRepository;
 use Illuminate\Queue\InteractsWithQueue;
@@ -34,8 +33,9 @@ class UserRegistrationCommandHandler extends DbUserRepository implements Registr
 	public function handle(UserRegistrationCommand $command)
 	{
         $user = $this->create(['name'=>$command->name,'email'=>$command->email,'password'=>$command->password]);
-        $this->auth->login($user);
+        $this->auth->login($user,true);
         \Event::fire(new UserHasRegistered($user->id,$user->name,$user->email));
+        return;
 	}
 
 

@@ -33,5 +33,9 @@ return [
 		'model'  => 'User',
 		'secret' => '',
 	],
-
+    'facebook' => [
+        'client_id' => getenv('FACEBOOK_CLIENT_ID'),
+        'client_secret' => getenv('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => 'http://frendy.app:8000/auth/facebook'
+    ],
 ];

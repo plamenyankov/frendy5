@@ -8,8 +8,14 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser
+        - WebDriver
         - AcceptanceHelper
         - Db
+        - Laravel5
+        - Asserts
     config:
         PhpBrowser:
-            url: 'http://frendy.app:8000/'
+            url: 'http://frendy.app:8000'
+        WebDriver:
+            url: 'http://frendy.app:8000'
+            browser: 'firefox'

@@ -7,10 +7,15 @@
     <title>Welcome to Smarter Admin</title>
     <link rel="stylesheet" href="/css/app.css" />
     <link href="/css/foundation-icons/foundation-icons.css" rel="stylesheet" />
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.3/socket.io.min.js"></script>
     <script src="/js/ember/libs/jquery-1.10.2.js"></script>
-    <script src="/js/ember/libs/ember-template-compiler-1.10.0.js"></script>
-    <script src="/js/ember/libs/ember-1.10.0.debug.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="/js/angular-file-upload-shim.js"></script> <!-- for no html5 browsers support -->
+    <script src="/js/angular-file-upload.js"></script>
+    <script src="//cdn.jsdelivr.net/anglular.flow/2.2.0/ng-flow-standalone.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+    <script src="/js/angular/modules/route.js"></script>
+    <script src="/js/angular/admin.js"></script>
+
     <link type="text/css" media="screen" rel="stylesheet" href="/css/responsive-tables.css" />
     <script type="text/javascript" src="/js/responsive-tables.js"></script>
     <!--    <script src="js/vendor/modernizr.js"></script>-->
@@ -19,6 +24,14 @@
     <link href="/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
     <link href="/css/todos.css" rel="stylesheet" />
     @yield('scripts')
+    <style>
+        i{
+            color:#FFF;
+            /*font-size: 48px;*/
+        }
+
+    </style>
+    <base href="/admin">
 </head>
 <body>
 <div class="row full-width wrapper">
@@ -27,7 +40,7 @@
             <div class="row">
                 <div class="large-2 medium-4 small-12 columns top-part-no-padding">
                     <div class="logo-bg">
-                        <img src="img/logo.png" alt="logo"/>
+                        <i class="step fi-address-book size-72"></i>
                         <i class="fi-list toggles" data-toggle="hide"></i>
                     </div>
                 </div>
@@ -55,10 +68,16 @@
                                     </div>
                                 </div>
                                 <div class="medium-3 small-3 columns">
-                                    <img src="img/32.jpg" alt="picture" class="top-bar-picture" />
+
+                                    @if(Auth::user()->avatar)
+                                    <img src="<% Auth::user()->avatar %>" alt="" style="width: 40px; margin-top: 10px;"/>
+                                    @else
+                                    <img src="http://www.gravatar.com/avatar/<% md5(Auth::user()->email) %>" alt=""
+                                         style="width: 35px"/>
+                                    @endif
                                 </div>
                                 <div class="medium-3 small-3 columns">
-                                    <i class="fi-power power-off"></i>
+                                    <a href="/auth/logout"><i class="fi-power power-off"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -67,11 +86,18 @@
                 </div>
             </div>
         </div>
+        @if(Session::has('flash_message'))
+        <div data-alert class="alert-box success ">
+            <% Session::get('flash_message') %>
+            <a href="#" class="close">&times;</a>
+        </div>
+        @endif
         <div class="row">
             <div class="no-padding">
                 <div class="large-2 medium-12 small-12 columns">
                     <ul class="side-nav">
                         <li class="active"><a href="/admin"><i class="flaticon-dashboard1"></i>Dashboard</a></li>
+                        <li><a href="/admin/products"><i class="flaticon-profile4"></i>Products</a></li>
                         <li><a href="/admin/users"><i class="flaticon-profile4"></i>Users</a></li>
                         <li><a href="profile.html"><i class="flaticon-profile4"></i>Profile</a></li>
                         <li><a href="staff.html"><i class="flaticon-businessman22"></i>Staff</a></li>
@@ -107,8 +133,10 @@
                     </ul>
                 </div>
             </div>
+     <div ng-app="admin">
+         <div ng-view></div>
+     </div>
 
-            @yield('content')
 
         </div>
     </div>

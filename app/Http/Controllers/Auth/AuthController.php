@@ -46,6 +46,7 @@ class AuthController extends Controller {
      */
     public function postRegister(Request $request)
     {
+
         $validator = $this->registrar->validator($request->all());
 
         if ($validator->fails())
@@ -56,12 +57,12 @@ class AuthController extends Controller {
         }
          $this->dispatchFrom(UserRegistrationCommand::class,$request);
 
-        return redirect($this->redirectPath());
+        return redirect('/');
     }
 
-    public function getFacebook(AuthenticateUser $authenticateUser){
+    public function getFacebook(AuthenticateUser $authenticateUser,Request $request){
 
-        return $authenticateUser->execute();
+         return $authenticateUser->execute($request->has('code'), 'facebook', $this);
+
     }
-
 }

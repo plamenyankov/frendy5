@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'plamenyankovtest@gmail.com', 'name' => 'Frendy'],
+	'from' => ['address' => env('EMAIL'), 'name' => 'Frendy'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
 	|
 	*/
 
-	'username' => 'plamenyankovtest@gmail.com',
+	'username' => env('EMAIL'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
 	|
 	*/
 
-	'password' => 'C0lumb0123',
+	'password' =>env('EMAIL_PASSWORD'),
 
 	/*
 	|--------------------------------------------------------------------------

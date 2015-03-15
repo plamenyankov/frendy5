@@ -44,8 +44,9 @@ class SendRegistrationConfirmation{
             $message->to($event->email, $event->name)->subject('Welcome!');
         });
 
-        $redis = \Illuminate\Support\Facades\Redis::connection();
-        $redis->publish('users.registered',json_encode([$event->id,$event->email,$event->name]));
+        $redis = \Predis::connection();
+//        $redis->publish('users.registered',json_encode([$event->id,$event->email,$event->name]));
+        $redis->publish('product.post',json_encode(['id'=>14,'brand'=>'Fucker','model'=>'socket','price'=>10000]));
     }
 
 }
