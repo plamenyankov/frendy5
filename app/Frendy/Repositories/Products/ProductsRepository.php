@@ -12,4 +12,5 @@ namespace App\Frendy\Repositories\Products;
 interface ProductsRepository {
  public function createProduct($products);
  public function saveImage($image,$id);
+ public function getTopProducts();
 } 

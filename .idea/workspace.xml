@@ -23,11 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ProductsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
-              <folding />
+            <state line="9" column="18" selection-start="244" selection-end="244" vertical-scroll-proportion="0.31625184" vertical-offset="0" max-vertical-offset="683">
+              <folding>
+                <element signature="e#39#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,7 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/TestSpec.php" />
         <option value="$PROJECT_DIR$/app/Test.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/products.new.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_02_18_144938_create_categories_table.php" />
@@ -52,7 +53,6 @@
         <option value="$PROJECT_DIR$/tests/acceptance.suite.yml" />
         <option value="$PROJECT_DIR$/tests/acceptance/ProductsCept.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/productsNew.blade.php" />
-        <option value="$PROJECT_DIR$/app/Frendy/Repositories/Products/ProductsRepository.php" />
         <option value="$PROJECT_DIR$/app/Products.php" />
         <option value="$PROJECT_DIR$/public/js/ember/libs/ember-data.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/users.blade.php" />
@@ -71,14 +71,12 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/resources/views/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/_base.scss" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/PostProduct.php" />
         <option value="$PROJECT_DIR$/public/js/angular/pages/productsNew.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/Handlers/Commands/ProductCreationCommandHandler.php" />
         <option value="$PROJECT_DIR$/public/js/angular/admin.js" />
         <option value="$PROJECT_DIR$/app/Commands/ProductCreationCommand.php" />
-        <option value="$PROJECT_DIR$/app/Frendy/Repositories/DbProductsRepository.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_02_21_074444_create_products_table.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
@@ -93,6 +91,10 @@
         <option value="$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Frendy/Repositories/Products/ProductsRepository.php" />
+        <option value="$PROJECT_DIR$/app/Frendy/Repositories/DbProductsRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
       </list>
     </option>
   </component>
@@ -185,53 +187,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frendy5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,7 +251,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25877193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45467836" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -308,11 +264,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -334,21 +290,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/flow.js/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/flow.js/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/angular/admin.products.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/functional/UserRegistrationCept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="34" selection-start="402" selection-end="402" vertical-scroll-proportion="0.5636008" vertical-offset="0" max-vertical-offset="552" />
@@ -414,11 +355,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1032" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="36" selection-start="1047" selection-end="1066" vertical-scroll-proportion="0.4902655" vertical-offset="251" max-vertical-offset="864" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/PostProduct.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="38" selection-start="550" selection-end="550" vertical-scroll-proportion="0.70265484" vertical-offset="299" max-vertical-offset="960" />
@@ -427,11 +363,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/angular/pages/productsNew.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="36" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.3043478" vertical-offset="696" max-vertical-offset="2448" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="923" selection-end="923" vertical-scroll-proportion="0.3478261" vertical-offset="840" max-vertical-offset="2064" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/angular/admin.js">
@@ -524,11 +455,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Frendy/Repositories/DbProductsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="129" selection-end="129" vertical-scroll-proportion="0.53932583" vertical-offset="0" max-vertical-offset="912" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Handlers/Commands/ProductCreationCommandHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="20" selection-start="609" selection-end="609" vertical-scroll-proportion="0.35280898" vertical-offset="443" max-vertical-offset="888" />
@@ -541,9 +467,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_02_21_075733_create_images_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="422" selection-end="422" vertical-scroll-proportion="0.40316206" vertical-offset="204" max-vertical-offset="984">
-          <folding />
-        </state>
+        <state line="18" column="37" selection-start="422" selection-end="422" vertical-scroll-proportion="0.40316206" vertical-offset="204" max-vertical-offset="984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Images.php">
@@ -555,7 +479,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/ImagesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="64" selection-start="390" selection-end="390" vertical-scroll-proportion="0.43083003" vertical-offset="118" max-vertical-offset="624">
+        <state line="15" column="64" selection-start="390" selection-end="390" vertical-scroll-proportion="0.43083003" vertical-offset="118" max-vertical-offset="624" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="530" selection-end="530" vertical-scroll-proportion="0.4624506" vertical-offset="342" max-vertical-offset="936" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="301" selection-end="301" vertical-scroll-proportion="0.6640316" vertical-offset="0" max-vertical-offset="506" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.2766798" vertical-offset="1152" max-vertical-offset="3144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.5731225" vertical-offset="22" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="36" selection-start="3135" selection-end="3135" vertical-scroll-proportion="-0.66007906" vertical-offset="2614" max-vertical-offset="3120" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <folding />
         </state>
       </provider>
@@ -567,45 +521,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="530" selection-end="530" vertical-scroll-proportion="0.4624506" vertical-offset="342" max-vertical-offset="936">
+        <state line="22" column="40" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5188172" vertical-offset="119" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductsTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="301" selection-end="301" vertical-scroll-proportion="0.6640316" vertical-offset="0" max-vertical-offset="506">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.45967743" vertical-offset="171" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.2766798" vertical-offset="1152" max-vertical-offset="3144">
+        <state line="47" column="5" selection-start="923" selection-end="923" vertical-scroll-proportion="2.5236769" vertical-offset="126" max-vertical-offset="2064">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Frendy/Repositories/DbProductsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="296" selection-end="296" vertical-scroll-proportion="0.5731225" vertical-offset="22" max-vertical-offset="552">
+        <state line="36" column="5" selection-start="748" selection-end="748" vertical-scroll-proportion="1.2392473" vertical-offset="379" max-vertical-offset="1032">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
+    <entry file="file://$PROJECT_DIR$/app/Frendy/Repositories/Products/ProductsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="36" selection-start="3135" selection-end="3135" vertical-scroll-proportion="-0.66007906" vertical-offset="2614" max-vertical-offset="3120">
+        <state line="14" column="1" selection-start="248" selection-end="248" vertical-scroll-proportion="0.5483871" vertical-offset="12" max-vertical-offset="384">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
+        <state line="9" column="18" selection-start="244" selection-end="244" vertical-scroll-proportion="0.31625184" vertical-offset="0" max-vertical-offset="683">
+          <folding>
+            <element signature="e#39#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

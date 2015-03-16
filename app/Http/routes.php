@@ -11,18 +11,17 @@
 |
 */
 
-Route::get('test',function(){
-   $t = new App\Test(new App\User);
-    return $t->getUsers();
-});
 Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+//API
+Route::group(['prefix' => '/api/v.1'], function()
+{
+Route::get('top','ProductsController@top');
+});
 //,'middleware' => 'admin'
 Route::group(['namespace'=>'Admin','middleware'=>'admin'],function(){
     Route::get('/admin','AdminController@index');
