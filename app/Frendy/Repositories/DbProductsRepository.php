@@ -31,8 +31,6 @@ class DbProductsRepository
         }
     }
     public function getTopProducts(){
-        return Products::with(['images'=>function($q){
-                $q->where('id','<',15);
-            }])->get();
+        return Products::with('images')->get();
     }
 }

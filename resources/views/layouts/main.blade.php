@@ -9,7 +9,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="/js/angular/modules/route.js"></script>
+    <script src="/js/angular/home.js"></script>
     <meta charset="UTF-8">
+    <base href="/">
 </head>
 <body>
 <div class="row-custom show-for-large-only">Поръчки: 1-800-0000 | Ймейл: office@shop.com</div>
@@ -28,12 +32,12 @@
                 <li class="has-dropdown not-click"><a href="#">
                         @if(!Auth::guest())
                         @if(Auth::user()->avatar)
-                        <img src="<% Auth::user()->avatar %>" alt="" style="width: 35px;"/>
+                        <img src="{{ Auth::user()->avatar }}" alt="" style="width: 35px;"/>
                         @else
-                        <img src="http://www.gravatar.com/avatar/<% md5(Auth::user()->email) %>" alt=""
+                        <img src="http://www.gravatar.com/avatar/{{ md5(Auth::user()->email) }}" alt=""
                              style="width: 35px"/>
                         @endif
-                        <% Auth::user()->name %>
+                        {{ Auth::user()->name }}
                         @else
                         <i class="fa fa-user"></i>
                         @endif
@@ -96,7 +100,7 @@
                     </ul>
                 </li>
                 <li class="has-dropdown"><a href="#"><i class="fa fa-shopping-cart"></i>
-                        <% Predis::get('users') %></a>
+                        {{ Predis::get('users') }}</a>
                     <ul class="dropdown">
                         <li>Hello</li>
                     </ul>
@@ -131,13 +135,16 @@
     </nav>
     @if(Session::has('flash_message'))
     <div data-alert class="alert-box success ">
-        <% Session::get('flash_message') %>
+        {{ Session::get('flash_message') }}
         <a href="#" class="close">&times;</a>
     </div>
     @endif
 </div>
 
 @yield('content')
+<div ng-app="home">
+    <div ng-view></div>
+</div>
 <div class="footer-light">
     <div class="row">
         <div class="large-4 columns">
@@ -188,6 +195,8 @@
         </div>
     </div>
 </div>
+
+
 <script src="/js/foundation.min.js"></script>
 <script src="/js/foundation/foundation.alert.js"></script>
 <script src="/js/vendor/modernizr.js"></script>

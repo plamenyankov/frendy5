@@ -32,7 +32,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{
 
-        return view('home.index',['products'=>[]]);
+        return view('home.index');
 	}
 
 }
