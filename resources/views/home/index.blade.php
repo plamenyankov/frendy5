@@ -1,23 +1,36 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="row-offers">
-    <div class="large-3 columns">hello</div>
-    <div class="large-6 columns"><div class="slider show-for-medium-up" style="border: 5px solid red" id="cslider">
-            <div class="section">
-                <div class="large-12 columns"><img data-lazy='img/promo.png'/></div>
-            </div>
-            <div class="section">
-                <div class="large-12 columns" style="background-color:red"><img data-lazy='img/promo.png'/></div>
-            </div>
-            <div class="section">
-                <div class="large-12 columns" style="background-color:green"><img data-lazy='img/promo.png'/></div>
-            </div>
-            <div class="section">
-                <div class="large-12 columns" style="background-color:aqua"><img data-lazy='img/promo.png'/></div>
-            </div>
-        </div></div>
-    <div class="large-3 columns">hello</div>
+<div class="row-offers large-collapse">
+    <div class="medium-2 hide-for-small columns">
+
+        <ul class="frendy-side-nav">
+            <li class="cat-side-nav"><a href="">Категории</a></li>
+            <li class="active"><a href="#">Днес</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Мода</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Спортни</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Електроника</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Почивки</a></li>
+        </ul>
+    </div>
+    <div class="medium-7 columns">
+        <div class="show-for-medium-up">
+
+                <img src='img/slider/slider1.jpg'/>
+<!--                <img src='img/slider/slider2.jpg'/>-->
+<!--                <img src='img/slider/slider3.jpg'/>-->
+<!--                <img src='img/slider/slider4.jpg'/>-->
+        </div>
+</div>
+    <div class="medium-3 columns">
+        <img src='img/slider/top1.jpg' alt="top image" class="image-100"/>
+        <img src='img/slider/top2.jpg' alt="top image" class="image-100"/>
+
+    </div>
 
 </div>
 <div class="show-for-medium-up">
@@ -25,26 +38,10 @@
         <ul class="title-area">
 
             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar "><a href="#"> <i
-                        class="step fi-magnifying-glass size-20 mr-5"></i><span>Търси</span></a></li>
+            <li class="toggle-topbar ">
+                <a href="#"> </a></li>
         </ul>
 
-        <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                <li><input type="text" class="search" placeholder="Search" value=search></li>
-                <li><a href="#" class="button"><i class="step fi-magnifying-glass size-20"></i></a></li>
-            </ul>
-            <!-- Left Nav Section -->
-            <ul class="left">
-                <li><select class="nav-select" name="category" id="">
-                        <option value="" selected>Категория</option>
-                        <option value="">дрехи</option>
-                        <option value="">дрехи</option>
-                        <option value="">дрехи</option>
-                    </select></li>
-            </ul>
-        </section>
     </nav>
 </div>
 <div class="row">

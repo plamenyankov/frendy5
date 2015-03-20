@@ -112,7 +112,7 @@
                 </li>
             </ul>
             <!-- Left Nav Section -->
-            <ul class="left">
+            <ul class="left show-for-small-only">
                 <li class="has-dropdown"><a href="#"><i class="fa fa-calendar-o nav-font-icon"></i>Днес</a>
                     <ul class="dropdown">
                         <li class="has-dropdown not-click"><a href="">Дамско</a>
@@ -131,6 +131,15 @@
                 <li><a href="#"><i class="step fi-mountains size-18 mr-5"></i>Почивки</a></li>
                 <li><a href="#"><i class="step fi-page-edit size-18 mr-5"></i>Публикувай</a></li>
             </ul>
+            <ul class="left show-for-medium-up medium-offset-2 search-box">
+                <li>
+                    <input type="text" placeholder="ТЪРСИ ПРОДУКТ"/>
+                </li>
+                <li>
+                    <a href="#" class="button tiny"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
+
         </section>
     </nav>
     @if(Session::has('flash_message'))

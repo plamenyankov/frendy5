@@ -52,12 +52,12 @@ body {
   $row-width: rem-calc(1300);
 }
 .slider {
-  max-width: 500px;
+  max-width: 1300px;
   overflow: hidden;
   font-family: "Minion pro";
   padding: rem-calc(15);
   height: 350px;
-  background: #d7d7d7;
+//  background: #d7d7d7;
   position: relative;
   padding: 0px;
 }
@@ -130,8 +130,7 @@ nav i{
 }
 
 .offer {
-  //  box-sizing: padding;
-//  padding: 10px;
+  margin-top: 20px;
   position: relative;
   min-height: rem-calc(200);
   img {
@@ -423,4 +422,31 @@ nav i{
 }
 .dropdown li table a{
   padding: 0px !important;
+}
+.frendy-side-nav {
+  @include side-nav( // Border color of divider
+   #ccc,
+      // Font size of nav items
+   0.8em,
+      // Color of navigation links
+    #ccc,
+      // Color of navigation links on active
+      #909090,
+      // Color of navigation links on hover
+      #ebebeb);
+  .cat-side-nav a{
+    background-color: #909090;
+    color: #ffffff;
+  }
+
+}
+.image-100{
+  width: 100% !important;
+//  min-height: 175px !important;
+}
+.search-box{
+  width: 600px;
+  li:first-of-type{
+    width: 80%;
+  }
 }
